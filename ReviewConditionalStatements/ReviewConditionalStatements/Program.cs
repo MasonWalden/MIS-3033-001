@@ -84,15 +84,21 @@ namespace ReviewConditionalStatements
             }
             Console.WriteLine(studentGrades[0]);
             Console.ReadKey();*/
-            
-            double result = Addition(5.5, 2);
+
+            /*double result = Addition(5.5, 2);
             Console.WriteLine(result);
             Console.ReadKey();
 
             double val1 = 10.5;
             double val2 = 1.5;
 
-            Subtraction(val1, val2);
+            Subtraction(val1, val2);*/
+
+            string s = "Hello World! :) ";
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                Console.Write(s[i]);
+            }
 
 
 
