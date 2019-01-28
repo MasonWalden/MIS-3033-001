@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Mason Walden
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace ReviewConditionalStatements
 {
     class Program
     {
+        //static double sum = 0; Class Level variable
         static void Main(string[] args)
         {
             /*int age = 0;
@@ -67,7 +69,7 @@ namespace ReviewConditionalStatements
             Console.WriteLine($"Your average exam score is {(average/ examScores.Count).ToString("N2")}");
             Console.ReadLine();*/
 
-            Dictionary<int, double> studentGrades = new Dictionary<int, double>();
+            /*Dictionary<int, double> studentGrades = new Dictionary<int, double>();
             studentGrades.Add(1, 0.97);
             studentGrades.Add(2, 0.47);
 
@@ -81,10 +83,33 @@ namespace ReviewConditionalStatements
                 studentGrades.Add(0, 1.0);
             }
             Console.WriteLine(studentGrades[0]);
-
+            Console.ReadKey();*/
+            
+            double result = Addition(5.5, 2);
+            Console.WriteLine(result);
             Console.ReadKey();
 
+            double val1 = 10.5;
+            double val2 = 1.5;
+
+            Subtraction(val1, val2);
+
+
+
         }
+
+        private static void Subtraction(double val1, double val2)
+        {
+            Console.WriteLine($"{val1 - val2}");
+        }
+
+        static double Addition(double value1, double value2)
+            {
+                double sum = value1 + value2;
+                return sum;
+            }
+
+        
 
     }
 }
